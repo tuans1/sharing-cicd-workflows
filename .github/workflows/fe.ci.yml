@@ -16,7 +16,19 @@ on:
         default: "src"
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+      - name: Run ESLint
+        run: npm run lint
   test:
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,4 +36,5 @@ jobs:
         with:
           node-version: 20.x
       - run: npm ci
-      - run: npm test -- ${{ inputs.folder }}
+      - name: Run Tests
+        run: npm test -- ${{ inputs.folder }}
