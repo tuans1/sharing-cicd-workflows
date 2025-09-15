@@ -22,6 +22,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const params = {};
   return (
     <html lang="en">
       <body
@@ -32,3 +33,4 @@ export default function RootLayout({
     </html>
   );
 }
+
