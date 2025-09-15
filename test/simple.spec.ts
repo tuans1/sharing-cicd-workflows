@@ -1,9 +1,9 @@
-function sum(a: number, b: number) {
-  return a + b;
+function multiply(a: number, b: number) {
+  return a * b;
 }
 
-describe("sum", () => {
-  it("should add numbers correctly", () => {
-    expect(sum(2, 3)).toBe(5);
+describe("AAA", () => {
+  it("should multiply numbers correctly", () => {
+    expect(multiply(3, 3)).toBe(9);
   });
 });
