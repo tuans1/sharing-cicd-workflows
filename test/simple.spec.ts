@@ -4,6 +4,6 @@ function multiply(a: number, b: number) {
 
 describe("AAA", () => {
   it("should multiply numbers correctly", () => {
-    expect(multiply(3, 3)).toBe(9);
+    expect(multiply(3, 2)).toBe(9);
   });
 });
