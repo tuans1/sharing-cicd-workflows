@@ -25,7 +25,7 @@ const frameworks = createListCollection({
 
 export default function FirstPage() {
   return (
-    <div className=" h-screen overflow-auto px-4!">
+    <div className=" h-screen overflow-auto px-4! bg-gray-800">
       <div className="flex">
         <p>Back</p>
         <h1 className="text-xl!" style={{ margin: " 0 auto" }}>
