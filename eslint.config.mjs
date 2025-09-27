@@ -19,11 +19,6 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
-    rules: {
-      "no-unused-vars": "error", // ⚡ bật lỗi cho biến không dùng
-      semi: ["error", "always"], // ví dụ thêm semi bắt buộc dấu ;
-      "no-console": "warn", // ví dụ console.log sẽ chỉ báo warning
-    },
   },
 ];
 
